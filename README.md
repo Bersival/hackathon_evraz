@@ -1,2 +1,3 @@
 # hackathon_evraz
-Repo for hackathon evraz
+Structure
+apps/front - frontend directory apps/server - backend directory apps/data - data model directory
