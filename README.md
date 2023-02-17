@@ -1,3 +1,3 @@
 # hackathon_evraz
-Structure
+# Structure
 apps/front - frontend directory apps/server - backend directory apps/data - data model directory
