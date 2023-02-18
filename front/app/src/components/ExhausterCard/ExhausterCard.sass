@@ -1,0 +1,94 @@
+@import "../../constants/const-style"
+.card_container
+    width: 288px
+    min-height: 523px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+
+    .card_header
+        background-color: $lightgrey-color
+        width: 100%
+        max-width: 100%
+        border-radius: 15px 15px 0 0
+        height: 40px
+        display: flex
+        align-items: center
+        justify-content: space-around
+        padding: 0 14px
+        button
+            @include button_reset()
+            width: 26px
+            height: 26px
+            background-color: #EFF2F6
+            border-radius: 4px
+            display: flex
+            align-items: center
+            justify-content: center
+            cursor: pointer
+            svg path
+                background-color: $lightgrey-color
+        color: $whiteThree-color
+    .card_rotor_info_container
+        padding: 0 14px
+        background-color: $whiteTwo-color
+        width: 100%
+        border-radius: 0 0 20px 20px
+        max-width: 100%
+        hr
+            background-color: $lightgrey-color
+            width: 100%
+            height: 1px
+            border: none
+            opacity: 0.7
+        .card_rotor_info
+            display: flex
+            align-items: center
+
+            // width: 100px
+            // height: 100px
+            // justify-content: center
+            // background-color: red
+            .card_rotorName_header
+                margin-right: 10px
+                color: $lightgrey-color
+            .card_rotorReplacementDate_header
+                background-color: #F4F4F4
+                padding: 4px 10px
+                border-radius: 5px
+        .card_rotorDetailedInfo_block
+            display: flex
+            padding: 0 21px
+            align-items: center
+            background-color: #E3E3E3
+            height: 83px
+            border-radius: 5px
+            margin-bottom: 10px
+            .card_rotorWorkingDate_header
+                background-color: #fff
+                padding: 4px 10px
+                border-radius: 5px
+            .prediction_block
+                // display: flex
+                margin-left: 10px
+                max-height: 100%
+                // padding: 10px 21px
+                height: 50px
+                // background-color: red
+                p
+                    line-height: 0
+                    color: #565656
+                    &:last-child
+                        font-weight: 900
+
+        .card_exhausterImg_block
+            width: 100%
+            background-color: #E3E3E3
+            padding: 10px
+            max-width: calc(100% - 28px)
+            border: 2px solid #C0CCDB
+            border-radius: 5px
+            .card_rotorDetailedInfo_mainHeader
+                width: 100%
+                

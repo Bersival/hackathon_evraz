@@ -1,0 +1,69 @@
+.headerOne_font {
+  font-family: "GT Eesti Pro Text";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+}
+
+.subOneB_font {
+  font-family: "GT Eesti Pro Text";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.subOne_font {
+  font-family: "GT Eesti Pro Text";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.subTwo_font {
+  font-family: "GT Eesti Pro Text";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.subThree_font {
+  font-family: "GT Eesti Pro Text";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.desc_font {
+  font-family: "GT Eesti Pro Text";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@font-face {
+  font-family: GT Eesti Pro Text;
+  src: url(./fonts/GTEestiProText-Book.otf);
+}
+@font-face {
+  font-family: GT Eesti Pro Text Medium;
+  src: url(./fonts/GTEestiProText-Medium.otf);
+}
+@font-face {
+  font-family: TTHoves-Light;
+  src: url(./fonts/TTHoves-Light.otf);
+}
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #dbdbdb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}

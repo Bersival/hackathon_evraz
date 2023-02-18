@@ -1,0 +1,41 @@
+.headerOne_font {
+  font-family: "GT Eesti Pro Text", "Comic Sans MC";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+}
+
+.subOneB_font {
+  font-family: "GT Eesti Pro Text", "Comic Sans MC";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.subOne_font {
+  font-family: "GT Eesti Pro Text", "Comic Sans MC";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.subTwo_font {
+  font-family: "GT Eesti Pro Text", "Comic Sans MC";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.subThree_font {
+  font-family: "GT Eesti Pro Text", "Comic Sans MC";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.desc_font {
+  font-family: "GT Eesti Pro Text", "Comic Sans MC";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
