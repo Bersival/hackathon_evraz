@@ -61,7 +61,7 @@
           box-sizing: border-box;
 }
 
-html, body, #root, .app {
+html, body, #root, .app, .app_wrapper {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -73,8 +73,8 @@ html, body, #root, .app {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 .app {
@@ -111,6 +111,8 @@ html, body, #root, .app {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1920px;
+  min-width: 1920px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

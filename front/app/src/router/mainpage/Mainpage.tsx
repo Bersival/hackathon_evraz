@@ -29,7 +29,6 @@ type ExhausterType = {
   }
 
 export const Mainpage = (props: MainpagePropsType) => {
-    // const obj = {exhausterName: sinterMachine.exhausterName,exhausterStatus: sinterMachine.exhausterStatus,rotorName: sinterMachine.rotorName,rotorReplacementDate: sinterMachine.rotorReplacementDate,rotorWorkingDate: sinterMachine.rotorWorkingDate,rotorEstimatedFailureDate: sinterMachine.rotorEstimatedFailureDate,bearingsInfo: sinterMachine.bearingsInfo}
   return (
     <div className='container mainpage_container'>
         {props.sinterMachines.map(sinterMachine => (

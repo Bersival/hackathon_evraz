@@ -2,15 +2,15 @@
 @import "./fonts/fonts"
 *
     box-sizing: border-box
-html, body, #root, .app
+html, body, #root, .app, .app_wrapper
     padding: 0
     margin: 0
     box-sizing: border-box
     background-color: $whiteFour-color
     display: flex
     justify-content: center
-    width: 100vw
-    height: 100vh
+    min-width: 100vw
+    min-height: 100vh
 .app
     display: flex
     align-items: flex-start
@@ -25,6 +25,8 @@ html, body, #root, .app
     height: 100vh
     .app_header
         display: flex
+        max-width: 1920px
+        min-width: 1920px
         align-items: center
         justify-content: start
         margin-bottom: 32px

@@ -235,6 +235,10 @@
   border: 2px solid #C0CCDB;
   border-radius: 5px;
 }
+.card_container .card_rotor_info_container .card_exhausterImg_block .bearing_1, .card_container .card_rotor_info_container .card_exhausterImg_block .bearing_2 {
+  fill: #FCDBCB;
+  stroke: #E32112;
+}
 .card_container .card_rotor_info_container .card_rotorDetailedInfo_mainHeader {
   width: 100%;
   white-space: nowrap;
@@ -333,14 +337,36 @@
 .card_container .card_bearingItem .card_bearingItemIcons div:first-child {
   margin-right: 7px;
 }
-.card_container .card_bearingItem .card_bearingItemIcons div svg path {
+.card_container .card_bearingItem .card_bearingItemIcons .warning {
+  border-color: #FAB82E;
+  background-color: #FFE3B4;
+}
+.card_container .card_bearingItem .card_bearingItemIcons .warning svg path {
+  stroke: #FAB82E;
+}
+.card_container .card_bearingItem .card_bearingItemIcons .warning svg path:last-child {
+  fill: #FAB82E;
+  stroke: #FAB82E;
+}
+.card_container .card_bearingItem .card_bearingItemIcons .danger {
+  border-color: #E32112;
+  background-color: #FCDBCB;
+}
+.card_container .card_bearingItem .card_bearingItemIcons .danger svg path, .card_container .card_bearingItem .card_bearingItemIcons .danger svg rect {
+  stroke: #E32112;
+  stroke: #E32112 !important;
+}
+.card_container .card_bearingItem .card_bearingItemIcons .danger:first-child {
+  margin-right: 7px;
+}
+.card_container .card_bearingItem .card_bearingItemIcons .danger svg path {
   stroke: #b3b3b3;
 }
-.card_container .card_bearingItem .card_bearingItemIcons div svg path:nth-child(2):last-child {
+.card_container .card_bearingItem .card_bearingItemIcons .danger svg path:nth-child(2):last-child {
   fill: #b3b3b3;
   stroke: #b3b3b3;
 }
-.card_container .card_bearingItem .card_bearingItemIcons div:nth-child(1) svg path:last-child {
+.card_container .card_bearingItem .card_bearingItemIcons .danger:nth-child(1) svg path:last-child {
   stroke: #b3b3b3;
   fill: #b3b3b3;
   stroke: #b3b3b3;

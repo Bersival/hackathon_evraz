@@ -33,12 +33,14 @@ type ExhausterCardProps = {
 }
 
 export const ExhausterCard = (props: ExhausterCardProps) => {
-  let warnings = [{}, {}, {}];
   const [hidden_bearings, setHidden_bearings] = useState("hidden_bearings")
   const [hidden_warnings, setHidden_warnings] = useState("visible")
-  const [mnemoSchema, setMnemoSchema] = useState(<p></p>)
+  const [mnemoSchema, setMnemoSchema] = useState(<></>)
+  function closeWindow() {
+    setMnemoSchema(<></>)
+  }
   function toggle_mnemoschema() {
-    setMnemoSchema(<Mnemoschema></Mnemoschema>)
+    setMnemoSchema(<Mnemoschema closeWindow={closeWindow}></Mnemoschema>)
   }
   return (
     <div className='container card_container'>
@@ -64,26 +66,25 @@ export const ExhausterCard = (props: ExhausterCardProps) => {
             </div>
           </div>
         </div>
-        <div className="card_exhausterImg_block"><RotorImg /></div>
 
+        <div className="card_exhausterImg_block"><RotorImg /></div>
         <div className="card_warningBlock">
-        <div className="bearingsInfo_container">
-          <div className='card_warningHeader_wrapper'>
-            <button className={`card_toggleList ${hidden_warnings}`} onClick={() => {hidden_warnings == "hidden_bearings" ? setHidden_warnings("") : setHidden_warnings("hidden_bearings")}}><DownIcon /></button>
-            <h3 className='card_warnings_header subTwo_font'>Предупреждения</h3>
+          <div className="bearingsInfo_container">
+            <div className='card_warningHeader_wrapper'>
+              <button className={`card_toggleList ${hidden_warnings}`} onClick={() => {hidden_warnings == "hidden_bearings" ? setHidden_warnings("") : setHidden_warnings("hidden_bearings")}}><DownIcon /></button>
+              <h3 className='card_warnings_header subTwo_font'>Предупреждения</h3>
           </div>
-            <div className={`card_warningInfoContainer ${hidden_warnings}`}>
-              {props.exhausterItem.bearingsInfo.slice(1, 3).map(item => (
-                <div className='card_bearingItem'>
-                  <h3 className='card_bearingItemName subThree_font'>{item.bearingName}</h3>
-                  <div className='card_bearingItemIcons'>
-                    <div className='card_bearingItemTempIcon'><TempIcon /></div>
-                    <div className='card_bearingItemVibIcon'><VibIcon /></div>
-                  </div>
+          <div className={`card_warningInfoContainer ${hidden_warnings}`}>
+            {props.exhausterItem.bearingsInfo.slice(0, 2).map(item => (
+              <div className='card_bearingItem'>
+                <h3 className='card_bearingItemName subThree_font'>{item.bearingName}</h3>
+                <div className='card_bearingItemIcons'>
+                  <div className='card_bearingItemTempIcon warning'><TempIcon /></div>
+                  <div className='card_bearingItemVibIcon danger'><VibIcon /></div>
                 </div>
-              ))}
-            </div>
-            
+              </div>
+            ))}
+          </div>
           </div>
         </div>
             
@@ -92,18 +93,17 @@ export const ExhausterCard = (props: ExhausterCardProps) => {
               <button className={`card_toggleList ${hidden_bearings}`} onClick={() => {hidden_bearings == "hidden_bearings" ? setHidden_bearings("") : setHidden_bearings("hidden_bearings")}}><DownIcon /></button>
               <h3 className='card_allBearings_header subTwo_font'>Все подшипники</h3>
           </div>
-              <div className={`card_bearingInfoContainer ${hidden_bearings}`}>
-                {props.exhausterItem.bearingsInfo.map(item => (
-                  <div className='card_bearingItem'>
-                    <h3 className='card_bearingItemName subThree_font'>{item.bearingName}</h3>
-                    <div className='card_bearingItemIcons'>
-                      <div className='card_bearingItemTempIcon'><TempIcon /></div>
-                      <div className='card_bearingItemVibIcon'><VibIcon /></div>
-                    </div>
-                  </div>
-                ))}
+          <div className={`card_bearingInfoContainer ${hidden_bearings}`}>
+            {props.exhausterItem.bearingsInfo.slice(2, -1).map(item => (
+              <div className='card_bearingItem'>
+                <h3 className='card_bearingItemName subThree_font'>{item.bearingName}</h3>
+                <div className='card_bearingItemIcons'>
+                  <div className='card_bearingItemTempIcon'><TempIcon /></div>
+                  <div className='card_bearingItemVibIcon'><VibIcon /></div>
+                </div>
               </div>
-          
+            ))}
+          </div>
         </div>
       </div>
     </div>

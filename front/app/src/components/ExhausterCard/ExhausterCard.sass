@@ -109,6 +109,9 @@
             max-width: 100%
             border: 2px solid #C0CCDB
             border-radius: 5px
+            .bearing_1, .bearing_2 
+                fill: #FCDBCB
+                stroke: #E32112
         .card_rotorDetailedInfo_mainHeader
             width: 100%
             white-space: nowrap
@@ -162,6 +165,25 @@
                 align-items: center
                 justify-content: center
                 border-radius: 3px
+                &:first-child
+                    margin-right: 7px
+            .warning
+                border-color: $yellow-color
+                background-color: $lightyellow-color
+                svg
+                    path
+                        stroke: $yellow-color
+                        &:last-child
+                            fill: $yellow-color
+                            stroke: $yellow-color
+            .danger
+                border-color: #E32112
+                background-color: #FCDBCB
+                svg
+                    path, rect
+                        stroke: #E32112
+                        // fill: #E32112
+                        stroke: #E32112 !important
                 &:first-child
                     margin-right: 7px
                 svg
