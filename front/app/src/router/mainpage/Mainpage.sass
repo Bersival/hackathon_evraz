@@ -1,0 +1,32 @@
+@import "../../constants/const-style"
+.mainpage_container
+    display: flex
+    // align-items: center
+    justify-content: center
+    width: 100vw
+    height: 100vh
+    .sinterMachine
+        display: flex
+        align-items: flex-start
+        justify-content: flex-start
+        flex-direction: column
+        min-width: 293px * 2
+        &:not(:last-child)
+            margin-right: 32px
+        .sinterMachine_header
+            width: 100%
+            margin-bottom: 10px
+            height: 40px
+            color: $grey-color
+            background-color: $whiteFour-color
+            display: flex
+            align-items: center
+            border-radius: 10px
+            padding: 0 20px
+        .sinterMachine_exhaustersInto_container
+            display: flex
+            align-items: flex-start
+            justify-content: flex-start
+            .ExhausterCardContainer:not(:last-child)
+                margin-right: 10px
+                

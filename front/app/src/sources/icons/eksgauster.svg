@@ -14,19 +14,19 @@
 <mask id="path-13-inside-1_8_2408" fill="white">
 <rect x="77" y="29.0001" width="21" height="16" rx="0.757583"/>
 </mask>
-<rect x="77" y="29.0001" width="21" height="16" rx="0.757583" fill="#414F4F" stroke="#8D9595" stroke-width="2" mask="url(#path-13-inside-1_8_2408)"/>
+<rect className="bearing_4" x="77" y="29.0001" width="21" height="16" rx="0.757583" fill="#414F4F" stroke="#8D9595" stroke-width="2" mask="url(#path-13-inside-1_8_2408)"/>
 <mask id="path-14-inside-2_8_2408" fill="white">
 <rect x="77" y="48.0001" width="21" height="16" rx="0.757583"/>
 </mask>
-<rect x="77" y="48.0001" width="21" height="16" rx="0.757583" fill="#414F4F" stroke="#8D9595" stroke-width="2" mask="url(#path-14-inside-2_8_2408)"/>
+<rect className="bearing_6" x="77" y="48.0001" width="21" height="16" rx="0.757583" fill="#414F4F" stroke="#8D9595" stroke-width="2" mask="url(#path-14-inside-2_8_2408)"/>
 <mask id="path-15-inside-3_8_2408" fill="white">
 <rect x="101" y="29.0001" width="21" height="16" rx="0.757583"/>
 </mask>
-<rect x="101" y="29.0001" width="21" height="16" rx="0.757583" fill="#414F4F" stroke="#8D9595" stroke-width="2" mask="url(#path-15-inside-3_8_2408)"/>
+<rect className="bearing_3" x="101" y="29.0001" width="21" height="16" rx="0.757583" fill="#414F4F" stroke="#8D9595" stroke-width="2" mask="url(#path-15-inside-3_8_2408)"/>
 <mask id="path-16-inside-4_8_2408" fill="white">
 <rect x="101" y="48.0001" width="21" height="16" rx="0.757583"/>
 </mask>
-<rect x="101" y="48.0001" width="21" height="16" rx="0.757583" fill="#414F4F" stroke="#8D9595" stroke-width="2" mask="url(#path-16-inside-4_8_2408)"/>
+<rect className="bearing_5" x="101" y="48.0001" width="21" height="16" rx="0.757583" fill="#414F4F" stroke="#8D9595" stroke-width="2" mask="url(#path-16-inside-4_8_2408)"/>
 <rect y="46" width="16" height="28" rx="2.27275" fill="#677272"/>
 <path d="M2.5 47.2949L3.145 47.6777L3.79904 48.0449L3.79 48.7949L3.79904 49.5449L3.145 49.9121L2.5 50.2949L1.855 49.9121L1.20096 49.5449L1.21 48.7949L1.20096 48.0449L1.855 47.6777L2.5 47.2949Z" fill="#8D9595"/>
 <path d="M2.5 70.2526L3.145 70.6354L3.79904 71.0026L3.79 71.7526L3.79904 72.5026L3.145 72.8697L2.5 73.2526L1.855 72.8697L1.20096 72.5026L1.21 71.7526L1.20096 71.0026L1.855 70.6354L2.5 70.2526Z" fill="#8D9595"/>
@@ -36,7 +36,7 @@
 <mask id="path-23-inside-5_8_2408" fill="white">
 <rect x="3" y="51" width="10" height="18" rx="0.757583"/>
 </mask>
-<rect x="3" y="51" width="10" height="18" rx="0.757583" fill="#414F4F" stroke="#8D9595" stroke-width="2" mask="url(#path-23-inside-5_8_2408)"/>
+<rect className="bearing_8 bearing_9" x="3" y="51" width="10" height="18" rx="0.757583" fill="#414F4F" stroke="#8D9595" stroke-width="2" mask="url(#path-23-inside-5_8_2408)"/>
 <rect x="45" y="46" width="16" height="28" rx="2.27275" fill="#677272"/>
 <path d="M47.5 47.2949L48.145 47.6777L48.799 48.0449L48.79 48.7949L48.799 49.5449L48.145 49.9121L47.5 50.2949L46.855 49.9121L46.201 49.5449L46.21 48.7949L46.201 48.0449L46.855 47.6777L47.5 47.2949Z" fill="#8D9595"/>
 <path d="M47.5 70.2526L48.145 70.6354L48.799 71.0026L48.79 71.7526L48.799 72.5026L48.145 72.8697L47.5 73.2526L46.855 72.8697L46.201 72.5026L46.21 71.7526L46.201 71.0026L46.855 70.6354L47.5 70.2526Z" fill="#8D9595"/>
@@ -46,7 +46,7 @@
 <mask id="path-30-inside-6_8_2408" fill="white">
 <rect x="48" y="51" width="10" height="18" rx="0.757583"/>
 </mask>
-<rect x="48" y="51" width="10" height="18" rx="0.757583" fill="#414F4F" stroke="#8D9595" stroke-width="2" mask="url(#path-30-inside-6_8_2408)"/>
+<rect className="bearing_7" x="48" y="51" width="10" height="18" rx="0.757583" fill="#414F4F" stroke="#8D9595" stroke-width="2" mask="url(#path-30-inside-6_8_2408)"/>
 <rect x="140" y="19" width="16" height="28" rx="2.27275" fill="#677272"/>
 <path d="M142.5 20.2949L143.145 20.6777L143.799 21.0449L143.79 21.7949L143.799 22.5449L143.145 22.9121L142.5 23.2949L141.855 22.9121L141.201 22.5449L141.21 21.7949L141.201 21.0449L141.855 20.6777L142.5 20.2949Z" fill="#8D9595"/>
 <path d="M142.5 43.2526L143.145 43.6354L143.799 44.0026L143.79 44.7526L143.799 45.5026L143.145 45.8697L142.5 46.2526L141.855 45.8697L141.201 45.5026L141.21 44.7526L141.201 44.0026L141.855 43.6354L142.5 43.2526Z" fill="#8D9595"/>
@@ -56,7 +56,7 @@
 <mask id="path-37-inside-7_8_2408" fill="white">
 <rect x="143" y="24" width="10" height="18" rx="0.757583"/>
 </mask>
-<rect x="143" y="24" width="10" height="18" rx="0.757583" fill="#414F4F" stroke="#8D9595" stroke-width="2" mask="url(#path-37-inside-7_8_2408)"/>
+<rect className="bearing_2" x="143" y="24" width="10" height="18" rx="0.757583" fill="#414F4F" stroke="#8D9595" stroke-width="2" mask="url(#path-37-inside-7_8_2408)"/>
 <rect x="224" y="19" width="16" height="28" rx="2.27275" fill="#677272"/>
 <path d="M226.5 20.2949L227.145 20.6777L227.799 21.0449L227.79 21.7949L227.799 22.5449L227.145 22.9121L226.5 23.2949L225.855 22.9121L225.201 22.5449L225.21 21.7949L225.201 21.0449L225.855 20.6777L226.5 20.2949Z" fill="#8D9595"/>
 <path d="M226.5 43.2526L227.145 43.6354L227.799 44.0026L227.79 44.7526L227.799 45.5026L227.145 45.8697L226.5 46.2526L225.855 45.8697L225.201 45.5026L225.21 44.7526L225.201 44.0026L225.855 43.6354L226.5 43.2526Z" fill="#8D9595"/>
@@ -66,7 +66,7 @@
 <mask id="path-44-inside-8_8_2408" fill="white">
 <rect x="227" y="24" width="10" height="18" rx="0.757583"/>
 </mask>
-<rect x="227" y="24" width="10" height="18" rx="0.757583" fill="#414F4F" stroke="#8D9595" stroke-width="2" mask="url(#path-44-inside-8_8_2408)"/>
+<rect className="bearing_1" x="227" y="24" width="10" height="18" rx="0.757583" fill="#414F4F" stroke="#8D9595" stroke-width="2" mask="url(#path-44-inside-8_8_2408)"/>
 <rect x="19.526" y="31.5261" width="22.9479" height="54.9479" fill="#8D9595" stroke="#677272" stroke-width="1.05208"/>
 <rect x="19.2742" y="33.437" width="23.0458" height="1.40277" fill="#677272"/>
 <rect x="19.2742" y="39.0482" width="23.0458" height="1.40277" fill="#677272"/>

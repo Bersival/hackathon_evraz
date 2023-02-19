@@ -1,12 +1,14 @@
 @import "../../constants/const-style"
+
 .card_container
     width: 288px
     min-height: 523px
     display: flex
-    align-items: center
-    justify-content: center
+    align-items: flex-start
+    justify-content: flex-start
     flex-direction: column
-
+    &:not(:last-child)
+        margin-right: 10px
     .card_header
         background-color: $lightgrey-color
         width: 100%
@@ -16,7 +18,7 @@
         display: flex
         align-items: center
         justify-content: space-around
-        padding: 0 14px
+        padding: 0 14px 
         button
             @include button_reset()
             width: 26px
@@ -31,7 +33,7 @@
                 background-color: $lightgrey-color
         color: $whiteThree-color
     .card_rotor_info_container
-        padding: 0 14px
+        padding: 0 14px 50px
         background-color: $whiteTwo-color
         width: 100%
         border-radius: 0 0 20px 20px
@@ -45,11 +47,6 @@
         .card_rotor_info
             display: flex
             align-items: center
-
-            // width: 100px
-            // height: 100px
-            // justify-content: center
-            // background-color: red
             .card_rotorName_header
                 margin-right: 10px
                 color: $lightgrey-color
@@ -57,38 +54,128 @@
                 background-color: #F4F4F4
                 padding: 4px 10px
                 border-radius: 5px
-        .card_rotorDetailedInfo_block
+        .card_toggleList
+            width: 20px
+            cursor: pointer
+            height: 20px
             display: flex
-            padding: 0 21px
             align-items: center
+            justify-content: center
+            @include button_reset()
+            background-color: #E3E3E3
+            transition: 0.5s
+            border-radius: 3px
+            margin-right: 4px
+            svg
+                transform: scale(1.75) rotate(0deg)
+            &.hidden_bearings
+                svg
+                transform: rotate(-90deg) !important
+        .card_rotorDetailedInfo_block
+            padding: 0 21px
+            max-width: 100%
+            max-height: 100%
             background-color: #E3E3E3
             height: 83px
             border-radius: 5px
             margin-bottom: 10px
             .card_rotorWorkingDate_header
                 background-color: #fff
-                padding: 4px 10px
-                border-radius: 5px
+                display: flex
+                height: 30px
+                margin-right: 10px
+                width: 66px
+                display: flex
+                align-items: center
+                margin-bottom: 15px
+                justify-content: center
             .prediction_block
-                // display: flex
-                margin-left: 10px
                 max-height: 100%
-                // padding: 10px 21px
                 height: 50px
-                // background-color: red
                 p
                     line-height: 0
                     color: #565656
                     &:last-child
                         font-weight: 900
-
+        .joining_section
+            display: flex
+            align-items: center
+            justify-content: flex-start
         .card_exhausterImg_block
             width: 100%
+            display: flex
             background-color: #E3E3E3
             padding: 10px
-            max-width: calc(100% - 28px)
+            max-width: 100%
             border: 2px solid #C0CCDB
             border-radius: 5px
-            .card_rotorDetailedInfo_mainHeader
-                width: 100%
-                
+        .card_rotorDetailedInfo_mainHeader
+            width: 100%
+            white-space: nowrap
+    .card_allBearings_header, .card_warnings_header
+        font-weight: 900
+    .card_bearingBlock
+        display: flex
+        align-items: space
+        justify-content: space-between
+        flex-direction: column
+    .card_warningHeader_wrapper
+        display: flex
+        align-items: center
+        button
+
+    .card_warningInfoContainer, .card_bearingInfoContainer
+        transition: 0.5s
+        &.hidden_bearings
+            width: 0
+            height: 0
+            transition: 0.5s
+            position: absolute
+            opacity: 0
+            top: -400px
+            .card_bearingItem
+                animation: chlen 2s linear infinite
+    .card_bearingItem
+        display: flex
+        width: 242px
+        margin-left: 18px
+        transition: .75s
+        height: 30px
+        background-color: #E3E3E3
+        align-items: center
+        justify-content: space-between
+        padding: 0 10px
+        border-radius: 5px
+        &:not(:last-child)
+            margin-bottom: 4px
+        &:hover
+            background-color: #C0CCDB
+            transition: 0.15s
+            cursor: pointer
+        .card_bearingItemIcons
+            display: flex
+            div
+                width: 24px
+                height: 20px
+                border: 1px solid #b3b3b3
+                display: flex
+                align-items: center
+                justify-content: center
+                border-radius: 3px
+                &:first-child
+                    margin-right: 7px
+                svg
+                    path
+                        stroke: #b3b3b3
+                        &:nth-child(2):last-child
+                            fill: #b3b3b3
+                            stroke: #b3b3b3
+                &:nth-child(1)
+                    svg
+                        path
+                            &:last-child
+                                stroke: #b3b3b3
+                                fill: #b3b3b3
+                                stroke: #b3b3b3
+                            
+                            

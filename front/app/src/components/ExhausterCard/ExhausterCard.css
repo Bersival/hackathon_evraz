@@ -3,6 +3,10 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .subOneB_font {
@@ -46,16 +50,19 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.card_container:not(:last-child) {
+  margin-right: 10px;
 }
 .card_container .card_header {
   background-color: #B3B3B3;
@@ -78,6 +85,11 @@
   text-decoration: none;
   outline: none;
   border: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
   background-color: transparent;
   width: 26px;
   height: 26px;
@@ -98,7 +110,7 @@
   background-color: #B3B3B3;
 }
 .card_container .card_rotor_info_container {
-  padding: 0 14px;
+  padding: 0 14px 50px;
   background-color: #EFF2F6;
   width: 100%;
   border-radius: 0 0 20px 20px;
@@ -128,14 +140,46 @@
   padding: 4px 10px;
   border-radius: 5px;
 }
-.card_container .card_rotor_info_container .card_rotorDetailedInfo_block {
+.card_container .card_rotor_info_container .card_toggleList {
+  width: 20px;
+  cursor: pointer;
+  height: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 21px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-color: #E3E3E3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 3px;
+  margin-right: 4px;
+}
+.card_container .card_rotor_info_container .card_toggleList svg {
+  -webkit-transform: scale(1.75) rotate(0deg);
+          transform: scale(1.75) rotate(0deg);
+}
+.card_container .card_rotor_info_container .card_toggleList.hidden_bearings {
+  -webkit-transform: rotate(-90deg) !important;
+          transform: rotate(-90deg) !important;
+}
+.card_container .card_rotor_info_container .card_rotorDetailedInfo_block {
+  padding: 0 21px;
+  max-width: 100%;
+  max-height: 100%;
   background-color: #E3E3E3;
   height: 83px;
   border-radius: 5px;
@@ -143,11 +187,22 @@
 }
 .card_container .card_rotor_info_container .card_rotorDetailedInfo_block .card_rotorWorkingDate_header {
   background-color: #fff;
-  padding: 4px 10px;
-  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  margin-right: 10px;
+  width: 66px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .card_container .card_rotor_info_container .card_rotorDetailedInfo_block .prediction_block {
-  margin-left: 10px;
   max-height: 100%;
   height: 50px;
 }
@@ -158,14 +213,135 @@
 .card_container .card_rotor_info_container .card_rotorDetailedInfo_block .prediction_block p:last-child {
   font-weight: 900;
 }
+.card_container .card_rotor_info_container .joining_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
 .card_container .card_rotor_info_container .card_exhausterImg_block {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #E3E3E3;
   padding: 10px;
-  max-width: calc(100% - 28px);
+  max-width: 100%;
   border: 2px solid #C0CCDB;
   border-radius: 5px;
 }
-.card_container .card_rotor_info_container .card_exhausterImg_block .card_rotorDetailedInfo_mainHeader {
+.card_container .card_rotor_info_container .card_rotorDetailedInfo_mainHeader {
   width: 100%;
+  white-space: nowrap;
+}
+.card_container .card_allBearings_header, .card_container .card_warnings_header {
+  font-weight: 900;
+}
+.card_container .card_bearingBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: space;
+      -ms-flex-align: space;
+          align-items: space;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.card_container .card_warningHeader_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card_container .card_warningInfoContainer, .card_container .card_bearingInfoContainer {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.card_container .card_warningInfoContainer.hidden_bearings, .card_container .card_bearingInfoContainer.hidden_bearings {
+  width: 0;
+  height: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  opacity: 0;
+  top: -400px;
+}
+.card_container .card_warningInfoContainer.hidden_bearings .card_bearingItem, .card_container .card_bearingInfoContainer.hidden_bearings .card_bearingItem {
+  -webkit-animation: chlen 2s linear infinite;
+          animation: chlen 2s linear infinite;
+}
+.card_container .card_bearingItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 242px;
+  margin-left: 18px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  height: 30px;
+  background-color: #E3E3E3;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+.card_container .card_bearingItem:not(:last-child) {
+  margin-bottom: 4px;
+}
+.card_container .card_bearingItem:hover {
+  background-color: #C0CCDB;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+  cursor: pointer;
+}
+.card_container .card_bearingItem .card_bearingItemIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.card_container .card_bearingItem .card_bearingItemIcons div {
+  width: 24px;
+  height: 20px;
+  border: 1px solid #b3b3b3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 3px;
+}
+.card_container .card_bearingItem .card_bearingItemIcons div:first-child {
+  margin-right: 7px;
+}
+.card_container .card_bearingItem .card_bearingItemIcons div svg path {
+  stroke: #b3b3b3;
+}
+.card_container .card_bearingItem .card_bearingItemIcons div svg path:nth-child(2):last-child {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.card_container .card_bearingItem .card_bearingItemIcons div:nth-child(1) svg path:last-child {
+  stroke: #b3b3b3;
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
 }

@@ -3,6 +3,10 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .subOneB_font {
@@ -52,12 +56,17 @@
   font-family: TTHoves-Light;
   src: url(./fonts/TTHoves-Light.otf);
 }
-body {
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, #root, .app {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #dbdbdb;
+  background-color: #F1F2F3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,4 +75,194 @@ body {
           justify-content: center;
   width: 100vw;
   height: 100vh;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app_wrapper {
+  width: 1920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+.app_wrapper .app_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-bottom: 32px;
+  width: 100%;
+  min-height: 86px;
+  background-color: #F1F2F3;
+}
+.app_wrapper .app_header .main_navigation {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 86px;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0px 48px;
+}
+.app_wrapper .app_header .main_navigation button {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+}
+.app_wrapper .app_header .main_navigation button:first-child {
+  margin-right: 41px;
+  background-color: #FAB82E;
+}
+.app_wrapper .app_header .main_navigation button:last-child {
+  position: absolute;
+  border: 2px solid #B1B1B2;
+  right: 48px;
+}
+.app_wrapper .app_header .main_navigation .header_logo {
+  margin-right: 98px;
+}
+.app_wrapper .app_header .main_navigation .main_headline {
+  color: #b3b3b3;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.app_wrapper .annotation_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1742px;
+  background-color: #F1F2F3;
+  margin-bottom: 32px;
+  height: 32px;
+}
+.app_wrapper .annotation_header .route_info, .app_wrapper .annotation_header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.app_wrapper .annotation_header ul {
+  text-decoration: none;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.app_wrapper .annotation_header ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.app_wrapper .annotation_header ul li svg {
+  margin-right: 8px;
+}
+.app_wrapper .annotation_header ul li span {
+  color: #B3B3B3;
+}
+.app_wrapper .annotation_header ul li:not(:last-child) {
+  margin-right: 24px;
+}
+.app_wrapper .annotation_header button {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  margin-right: 16px;
+  background-color: #FAB82E;
+}
+.app_wrapper .annotation_header h3 {
+  color: #B3B3B3;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }

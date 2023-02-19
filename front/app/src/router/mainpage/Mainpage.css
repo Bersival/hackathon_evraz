@@ -1,0 +1,104 @@
+.headerOne_font {
+  font-family: "GT Eesti Pro Text";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.subOneB_font {
+  font-family: "GT Eesti Pro Text";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.subOne_font {
+  font-family: "GT Eesti Pro Text";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.subTwo_font {
+  font-family: "GT Eesti Pro Text";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.subThree_font {
+  font-family: "GT Eesti Pro Text";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.desc_font {
+  font-family: "GT Eesti Pro Text";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.mainpage_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.mainpage_container .sinterMachine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 586px;
+}
+.mainpage_container .sinterMachine:not(:last-child) {
+  margin-right: 32px;
+}
+.mainpage_container .sinterMachine .sinterMachine_header {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 40px;
+  color: #868686;
+  background-color: #F1F2F3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  padding: 0 20px;
+}
+.mainpage_container .sinterMachine .sinterMachine_exhaustersInto_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.mainpage_container .sinterMachine .sinterMachine_exhaustersInto_container .ExhausterCardContainer:not(:last-child) {
+  margin-right: 10px;
+}

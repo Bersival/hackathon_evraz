@@ -1,14 +1,104 @@
 @import "./constants/const-style"
 @import "./fonts/fonts"
-
-body
+*
+    box-sizing: border-box
+html, body, #root, .app
     padding: 0
     margin: 0
     box-sizing: border-box
-    background-color: #dbdbdb
-
+    background-color: $whiteFour-color
     display: flex
-    // align-items: center
     justify-content: center
     width: 100vw
     height: 100vh
+.app
+    display: flex
+    align-items: flex-start
+    justify-content: center
+.app_wrapper
+    width: 1920px
+    display: flex
+    align-items: center
+    padding-top: 50px
+    justify-content: flex-start
+    flex-direction: column
+    height: 100vh
+    .app_header
+        display: flex
+        align-items: center
+        justify-content: start
+        margin-bottom: 32px
+        width: 100%
+        min-height: 86px
+        background-color: $whiteFour-color
+        // margin-bottom: 32px
+        .main_navigation
+            position: relative
+            display: flex
+            align-items: center
+            height: 86px
+            width: 100%
+            justify-content: flex-start
+            padding: 0px 48px
+            button
+                @include button_reset()
+                width: 40px
+                height: 40px
+                display: flex
+                cursor: pointer
+                align-items: center
+                justify-content: center
+                border-radius: 5px
+                &:first-child
+                    margin-right: 41px
+                    background-color: $yellow-color
+                &:last-child
+                    position: absolute
+                    border: 2px solid #B1B1B2
+                    right: 48px
+            .header_logo
+                margin-right: 98px
+            .main_headline
+                color: #b3b3b3
+                user-select: none
+    .annotation_header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 1742px
+        background-color: $whiteFour-color
+        margin-bottom: 32px
+        height: 32px
+        .route_info, ul
+            display: flex
+            align-items: center
+            justify-content: center
+        ul
+            text-decoration: none
+            list-style-type: none
+            display: flex
+            align-items: center
+            justify-content: center
+            li
+                display: flex
+                align-items: center
+                user-select: none
+                justify-content: center
+                svg
+                    margin-right: 8px
+                span
+                    color: $lightgrey-color
+                &:not(:last-child)
+                    margin-right: 24px
+        button
+            @include button_reset()
+            width: 32px
+            height: 32px
+            border-radius: 5px
+            margin-right: 16px
+            background-color: $yellow-color
+        h3
+            color: $lightgrey-color
+            user-select: none
+
+                
